@@ -1,3 +1,6 @@
 <template>
-  <HeaderVue />
+  <main class="flex">
+    <SideBarVue />
+    <MainContentVue />
+  </main>
 </template>
