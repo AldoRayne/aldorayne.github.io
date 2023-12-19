@@ -6,7 +6,7 @@
       <p>Україна, м. Черкаси</p>
     </div>
     <div class="flex items-center">
-      <Icon name="material-symbols:info-outline" class="mr-1" />
+      <Icon name="openmoji:man-mage" class="mr-1" />
       <p>{{ age }} років</p>
     </div>
   </div>
