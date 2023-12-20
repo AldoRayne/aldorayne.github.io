@@ -11,7 +11,7 @@
 // const apiUrl = useApiUrl();
 // const { data } = await useFetch(`${apiUrl}/data`);
 
-const contentData: Data = {
+const contentData: MainData = {
   workingHistory: {
     boldTitle: true,
     title: "Досвід роботи",

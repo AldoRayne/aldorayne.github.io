@@ -42,7 +42,7 @@
 <script setup lang="ts">
 defineProps({
   data: {
-    type: Object as PropType<List[]>,
+    type: Object as PropType<MainListSection>,
     required: true,
   },
 });

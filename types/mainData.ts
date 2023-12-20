@@ -1,20 +1,20 @@
-export interface Data {
-  readonly workingHistory: ListSection;
-  readonly education: ListSection;
-  readonly courses: ListSection;
+export interface MainData {
+  readonly workingHistory: MainListSection;
+  readonly education: MainListSection;
+  readonly courses: MainListSection;
 }
 
-interface ListSection extends SectionTop {
-  readonly list: List[];
+export interface MainListSection extends MainSectionTop {
+  readonly list: MainSectionList[];
 }
 
-export interface List {
+interface MainSectionList {
   readonly date: string;
   readonly listTitle: string;
   readonly listItems?: string[];
 }
 
-interface SectionTop {
+interface MainSectionTop {
   readonly title: string;
   readonly boldTitle?: boolean;
   readonly icon: string;
