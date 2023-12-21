@@ -10,8 +10,8 @@ export type MainSection = {
       text?: never;
     }
   | {
-      list?: never;
       readonly text: string;
+      list?: never;
     }
 );
 
