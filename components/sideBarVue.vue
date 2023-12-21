@@ -7,6 +7,8 @@
         class="w-full h-full object-contain"
         src="/img/avatar.png"
         alt="Аватар"
+        width="200"
+        height="275"
         loading="lazy"
       />
     </div>

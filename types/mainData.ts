@@ -1,12 +1,18 @@
-export interface MainData {
-  readonly workingHistory: MainListSection;
-  readonly education: MainListSection;
-  readonly courses: MainListSection;
-}
+export type MainData = MainSection[];
 
-export interface MainListSection extends MainSectionTop {
-  readonly list: MainSectionList[];
-}
+export type MainSection = MainSectionTop &
+  (
+    | {
+        readonly list: MainSectionListArray;
+        text?: never;
+      }
+    | {
+        list?: never;
+        readonly text: string;
+      }
+  );
+
+export type MainSectionListArray = MainSectionList[];
 
 interface MainSectionList {
   readonly date: string;

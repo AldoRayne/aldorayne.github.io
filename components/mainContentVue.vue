@@ -1,9 +1,11 @@
 <template>
   <div class="ml-auto pt-6 px-5 w-[calc(100%_-_350px)]">
     <MainInfoVue />
-    <MainSectionVue :data="contentData.workingHistory" />
-    <MainSectionVue :data="contentData.education" />
-    <MainSectionVue :data="contentData.courses" />
+    <MainSectionVue
+      v-for="(item, index) in contentData"
+      :key="index"
+      :data="item"
+    />
   </div>
 </template>
 
@@ -11,8 +13,8 @@
 // const apiUrl = useApiUrl();
 // const { data } = await useFetch(`${apiUrl}/data`);
 
-const contentData: MainData = {
-  workingHistory: {
+const contentData: MainData = [
+  {
     boldTitle: true,
     title: "Досвід роботи",
     icon: "solar:case-bold",
@@ -55,7 +57,7 @@ const contentData: MainData = {
       },
     ],
   },
-  education: {
+  {
     title: "Освіта",
     icon: "mdi:education-outline",
     list: [
@@ -71,7 +73,7 @@ const contentData: MainData = {
       },
     ],
   },
-  courses: {
+  {
     title: "Курси",
     icon: "streamline:quality-education",
     list: [
@@ -81,5 +83,10 @@ const contentData: MainData = {
       },
     ],
   },
-};
+  {
+    title: "Про себе",
+    icon: "mdi:user-outline",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi auctor, mi vitae fringilla finibus, enim ex varius tellus, non aliquet lectus ex sit amet sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus at nunc in elit pulvinar mattis. Integer elementum eros et dolor efficitur, ac congue risus aliquet. Nunc lobortis quis nisl nec pharetra. Nullam et tempus nisi, ut ultrices arcu. Fusce vestibulum sed erat a dapibus. Aliquam pharetra sem eros, et malesuada orci lacinia nec. Maecenas pulvinar sed sem id luctus. Curabitur nec tellus quis diam vulputate ultrices ac ac massa. Sed sollicitudin, sem vitae scelerisque commodo, magna mi accumsan ipsum, sed elementum lectus massa sit amet nisl. Vestibulum non massa eu mauris ornare eleifend.",
+  },
+];
 </script>

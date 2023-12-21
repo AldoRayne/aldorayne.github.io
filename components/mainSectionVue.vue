@@ -1,5 +1,5 @@
 <template>
-  <section class="mt-6">
+  <section class="mt-4">
     <div
       class="mb-4 flex items-center justify-between relative after:absolute after:block after:w-full after:h-px after:bg-[#285ed4]"
     >
@@ -16,9 +16,9 @@
         </div>
       </div>
     </div>
-    <ul>
+    <ul v-if="dataList">
       <li
-        v-for="(item, index) in data.list"
+        v-for="(item, index) in dataList"
         :key="index"
         class="mb-5 flex items-start last:mb-0"
       >
@@ -27,7 +27,9 @@
           class="mr-8 w-24 min-h-[27px] shrink-0 flex items-center text-xs"
         ></p>
         <div>
-          <p :class="{ 'font-medium': data.boldTitle }" class="mb-2">{{ item.listTitle }}</p>
+          <p :class="{ 'font-medium': data.boldTitle }" class="mb-2">
+            {{ item.listTitle }}
+          </p>
           <ul class="ml-4 list-disc text-sm">
             <li v-for="(subItem, subIndex) in item.listItems" :key="subIndex">
               {{ subItem }}
@@ -36,14 +38,23 @@
         </div>
       </li>
     </ul>
+    <p v-else class="text-sm">{{ dataText }}</p>
   </section>
 </template>
 
 <script setup lang="ts">
-defineProps({
+const props = defineProps({
   data: {
-    type: Object as PropType<MainListSection>,
+    type: Object as PropType<MainSection>,
     required: true,
   },
+});
+
+const dataList = computed((): MainSectionListArray | undefined => {
+  if ("list" in props.data) return props.data.list;
+});
+
+const dataText = computed((): string | undefined => {
+  if ("text" in props.data) return props.data.text;
 });
 </script>
