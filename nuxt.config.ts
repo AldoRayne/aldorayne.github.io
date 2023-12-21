@@ -6,14 +6,14 @@ export default defineNuxtConfig({
   },
   modules: ["@pinia/nuxt", "nuxt-icon", "nuxt-swiper"],
   css: ["~/assets/css/main.css"],
-  swiper: {
-    modules: ["free-mode", "mousewheel"],
-  },
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
+  },
+  swiper: {
+    modules: ["free-mode", "mousewheel"],
   },
   imports: {
     dirs: ["types/*.ts"],
