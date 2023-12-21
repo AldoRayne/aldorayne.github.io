@@ -15,7 +15,7 @@
 
 const contentData: MainData = [
   {
-    boldTitle: true,
+    boldListTitle: true,
     title: "Досвід роботи",
     icon: "solar:case-bold",
     list: [

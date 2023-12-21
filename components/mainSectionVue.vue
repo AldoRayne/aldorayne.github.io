@@ -27,7 +27,7 @@
           class="mr-8 w-24 min-h-[27px] shrink-0 flex items-center text-xs"
         ></p>
         <div>
-          <p :class="{ 'font-medium': data.boldTitle }" class="mb-2">
+          <p :class="{ 'font-medium': data.boldListTitle }" class="mb-2">
             {{ item.listTitle }}
           </p>
           <ul class="ml-4 list-disc text-sm">
