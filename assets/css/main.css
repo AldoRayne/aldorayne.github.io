@@ -16,6 +16,12 @@
 
   html {
     font-family: "Noto Sans", sans-serif;
-    font-size: 18px;
+    font-size: 11px;
+  }
+
+  @media (min-width: 768px) {
+    html {
+      font-size: 18px;
+    }
   }
 }

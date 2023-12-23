@@ -4,16 +4,13 @@ export default defineNuxtConfig({
   typescript: {
     typeCheck: true,
   },
-  modules: ["@pinia/nuxt", "nuxt-icon", "nuxt-swiper"],
+  modules: ["@pinia/nuxt", "nuxt-icon"],
   css: ["~/assets/css/main.css"],
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
-  },
-  swiper: {
-    modules: ["free-mode", "mousewheel"],
   },
   imports: {
     dirs: ["types/*.ts"],

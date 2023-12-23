@@ -1,5 +1,5 @@
 <template>
-  <div class="ml-auto pt-6 px-5 w-[calc(100%_-_350px)]">
+  <div class="ml-auto pt-6 px-5 w-[calc(100%_-_50px)] sm:w-[calc(100%_-_320px)] min-w-[270px]">
     <MainInfoVue />
     <MainSectionVue
       v-for="(item, index) in contentData"
