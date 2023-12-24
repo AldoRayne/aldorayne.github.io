@@ -1,7 +1,8 @@
 <template>
   <aside
-    id="sideBar"
-    class="fixed z-20 top-0 left-[-270px] sm:left-0 shrink-0 w-[320px] h-full bg-gradient-to-b from-[#092974] to-[#1c23c3] overflow-y-auto"
+    ref="sideBar"
+    :class="isOpened ? 'overflow-y-auto' : 'overflow-y-hidden'"
+    class="fixed z-20 pb-6 top-0 left-[-270px] sm:left-0 shrink-0 w-[320px] h-full bg-gradient-to-b from-[#092974] to-[#1c23c3]"
   >
     <button
       ref="collapseButton"
@@ -27,25 +28,47 @@
 </template>
 
 <script setup lang="ts">
+const sideBar = ref(null as HTMLElement | null);
 const collapseButton = ref(null as HTMLButtonElement | null);
 
+const isOpened = ref(false);
+
+function removeStyleAttributes(): void {
+  if (sideBar.value && collapseButton.value) {
+    document.body.removeAttribute("style");
+    sideBar.value.removeAttribute("style");
+    collapseButton.value.removeAttribute("style");
+  }
+}
+
 function sideBarCollapse(): void {
-  const sideBar = document.getElementById("sideBar");
+  if (sideBar.value && collapseButton.value) {
+    isOpened.value = !isOpened.value;
 
-  if (sideBar && collapseButton.value) {
-    sideBar.classList.toggle("opened");
-
-    if (sideBar.classList.contains("opened")) {
+    if (isOpened.value) {
       document.body.style.overflowY = "hidden";
-      sideBar.style.left = "0";
+      sideBar.value.style.left = "0";
       collapseButton.value.style.transform = "scale(-1, 1)";
 
       return;
     }
 
-    document.body.removeAttribute("style");
-    sideBar.removeAttribute("style");
-    collapseButton.value.removeAttribute("style");
+    removeStyleAttributes();
   }
 }
+
+function checkResponsiveWidth(): void {
+  isOpened.value = window.innerWidth >= 640 ?? false;
+}
+
+function windowResize(): void {
+  checkResponsiveWidth();
+  removeStyleAttributes();
+}
+
+onMounted(() => {
+  checkResponsiveWidth();
+
+  window.addEventListener("resize", windowResize, false);
+});
 </script>
