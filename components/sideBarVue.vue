@@ -3,6 +3,8 @@
     ref="sideBar"
     :class="isOpened ? 'overflow-y-auto' : 'overflow-y-hidden'"
     class="fixed z-20 pb-6 top-0 left-[-270px] sm:left-0 shrink-0 w-[320px] h-full bg-gradient-to-b from-[#092974] to-[#1c23c3]"
+    @mouseover="enableScroll"
+    @mouseleave="disableScroll"
   >
     <button
       ref="collapseButton"
@@ -57,8 +59,22 @@ function sideBarCollapse(): void {
   }
 }
 
+function enableScroll(): void {
+  if (window.innerWidth >= 640) {
+    isOpened.value = true;
+    document.body.style.overflowY = "hidden";
+  }
+}
+
+function disableScroll(): void {
+  if (window.innerWidth >= 640) {
+    isOpened.value = false;
+    document.body.removeAttribute("style");
+  }
+}
+
 function checkResponsiveWidth(): void {
-  isOpened.value = window.innerWidth >= 640 ?? false;
+  isOpened.value = window.innerWidth >= 640;
 }
 
 function windowResize(): void {
