@@ -1,5 +1,7 @@
 <template>
-  <div class="ml-auto mb-6 pt-6 px-5 w-[calc(100%_-_50px)] sm:w-[calc(100%_-_320px)] min-w-[270px]">
+  <div
+    class="ml-auto mb-6 pt-6 px-5 w-[calc(100%_-_50px)] sm:w-[calc(100%_-_320px)] min-w-[270px]"
+  >
     <MainInfoVue />
     <MainSectionVue
       v-for="(item, index) in contentData"
@@ -86,7 +88,7 @@ const contentData: MainData = [
   {
     title: "Про себе",
     icon: "mdi:user-outline",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi auctor, mi vitae fringilla finibus, enim ex varius tellus, non aliquet lectus ex sit amet sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus at nunc in elit pulvinar mattis. Integer elementum eros et dolor efficitur, ac congue risus aliquet. Nunc lobortis quis nisl nec pharetra. Nullam et tempus nisi, ut ultrices arcu. Fusce vestibulum sed erat a dapibus. Aliquam pharetra sem eros, et malesuada orci lacinia nec. Maecenas pulvinar sed sem id luctus. Curabitur nec tellus quis diam vulputate ultrices ac ac massa. Sed sollicitudin, sem vitae scelerisque commodo, magna mi accumsan ipsum, sed elementum lectus massa sit amet nisl. Vestibulum non massa eu mauris ornare eleifend.",
+    text: "Більше пʼяти років працюю в сфері IT. Більше 4 - в якості Front-end розробника. Досвід роботи з Vue та Nuxt - більше двох років. Із різною періодичністю працював як віддалено з дому, так і в офісі. Останній рік мав змогу попрацювати із іноземним клієнтом в мультинаціональній команді.",
   },
 ];
 </script>
