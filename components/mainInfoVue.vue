@@ -5,7 +5,7 @@
     <div class="mt-2 flex">
       <div class="mr-6 flex items-center">
         <Icon name="ic:outline-place" class="mr-1" />
-        <p>Україна, м. Черкаси</p>
+        <p>Україна, м. Черкаси (офіс / віддалено)</p>
       </div>
       <div class="flex items-center">
         <Icon name="openmoji:man-mage" class="mr-1" />
