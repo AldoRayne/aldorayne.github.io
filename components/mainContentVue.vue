@@ -18,77 +18,113 @@
 const contentData: MainData = [
   {
     boldListTitle: true,
-    title: "Досвід роботи",
-    icon: "solar:case-bold",
+    title: 'Досвід роботи',
+    icon: 'solar:case-bold',
     list: [
       {
-        date: "cерпень 2018 - <br /> грудень 2021",
-        listTitle: "MyOpencart",
+        date: 'cерпень 2018 - <br /> грудень 2021',
+        listTitle: 'MyOpencart',
         listItems: [
-          "адміністрування і заповнення сайтів контентом",
-          "верстка шаблонів з `нуля`",
-          "встановлення і налаштування плагінів для CMS OpenCart",
-          "натяжка back-end логіки на html-сторінки",
-          "оптимізація коду для кращої швидкодії",
-          "SEO-оптимізація",
+          'адміністрування і заповнення сайтів контентом',
+          'верстка шаблонів з `нуля`',
+          'встановлення і налаштування плагінів для CMS OpenCart',
+          'натяжка back-end логіки на html-сторінки',
+          'оптимізація коду для кращої швидкодії',
+          'SEO-оптимізація',
         ],
       },
       {
-        date: "грудень 2021 - <br /> січень 2023",
-        listTitle: "Intertech",
+        date: 'грудень 2021 - <br /> січень 2023',
+        listTitle: 'Intertech',
         listItems: [
-          "верстка шаблонів з `нуля`",
-          "верстка шаблонів для електронної пошти",
-          "розробка SPA за допомогою Vue, Nuxt",
-          "робота з Rest API",
-          "оптимізація коду для кращої швидкодії",
-          "SEO-оптимізація",
+          'верстка шаблонів з `нуля`',
+          'верстка шаблонів для електронної пошти',
+          'розробка SPA за допомогою Vue, Nuxt',
+          'робота з Rest API',
+          'оптимізація коду для кращої швидкодії',
+          'SEO-оптимізація',
         ],
       },
       {
-        date: "січень 2023 - <br /> грудень 2023",
-        listTitle: "Pixchange",
+        date: 'січень 2023 - <br /> грудень 2023',
+        listTitle: 'Pixchange',
         listItems: [
-          "верстка адаптивних cторінок під різні пристрої",
-          "розробка логіки на Vue 2",
-          "робота з Rest API",
-          "інтеграція Metamask Widget для ПК та Metamask Browser для мобільних пристроїв",
-          "оптимізація коду для кращої швидкодії",
-          "SEO-оптимізація",
+          'верстка адаптивних cторінок під різні пристрої',
+          'розробка логіки на Vue 2',
+          'робота з Rest API',
+          'інтеграція Metamask Widget для ПК та Metamask Browser для мобільних пристроїв',
+          'оптимізація коду для кращої швидкодії',
+          'SEO-оптимізація',
         ],
       },
     ],
   },
   {
-    title: "Освіта",
-    icon: "mdi:education-outline",
+    title: 'Освіта',
+    icon: 'mdi:education-outline',
     list: [
       {
-        date: "2000р. - <br /> 2012р.",
+        date: '2000р. - <br /> 2012р.',
         listTitle:
-          "Корсунь-Шевченківська загальноосвітня школа I-III ступенів №1",
+          'Корсунь-Шевченківська загальноосвітня школа I-III ступенів №1',
       },
       {
-        date: "2012р. - <br /> 2016р.",
+        date: '2012р. - <br /> 2016р.',
         listTitle:
-          "Черкаський національний університет імені Богдана Хмельницького, системний аналіз",
+          'Черкаський національний університет імені Богдана Хмельницького, системний аналіз',
       },
     ],
   },
   {
-    title: "Курси",
-    icon: "streamline:quality-education",
+    title: 'Курси',
+    icon: 'streamline:quality-education',
     list: [
       {
-        date: "2018р.",
-        listTitle: "GeekHub: Front-End + JS",
+        date: '2018р.',
+        listTitle: 'GeekHub: Front-End + JS',
       },
     ],
   },
   {
-    title: "Про себе",
-    icon: "mdi:user-outline",
-    text: "Більше пʼяти років працюю в сфері IT. Більше 4 - в якості Front-end розробника. Досвід роботи з Vue та Nuxt - більше двох років. Із різною періодичністю працював як віддалено з дому, так і в офісі. Останній рік мав змогу попрацювати із іноземним клієнтом в мультинаціональній команді.",
+    title: 'Про себе',
+    icon: 'mdi:user-outline',
+    text: 'Більше пʼяти років працюю в сфері IT. Більше 4 - в якості Front-end розробника. Досвід роботи з Vue та Nuxt - більше двох років. Із різною періодичністю працював як віддалено з дому, так і в офісі. Останній рік мав змогу попрацювати із іноземним клієнтом в мультинаціональній команді.',
+  },
+  {
+    title: 'Портфоліо',
+    icon: 'bytesize:portfolio',
+    portfolioList: [
+      {
+        title: 'Українці X.Y.Z.',
+        link: 'https://ukrainci.xyz/',
+        image: '/img/ukrainci_xyz.png',
+      },
+      {
+        title: 'Оптика Люксор',
+        link: 'https://opticaluxor.ua/',
+        image: '/img/opticaluxor_ua.png',
+      },
+      {
+        title: 'Alliance Ua',
+        link: 'https://allianceua.com.ua/',
+        image: '/img/allianceua_com_ua.png',
+      },
+      {
+        title: 'Tabooret',
+        link: 'https://tabooret.com/ua',
+        image: '/img/tabooret_com.png',
+      },
+      {
+        title: 'Depositphotos',
+        link: 'https://depositphotos.com/trends2021',
+        image: '/img/depositphotos_com.png',
+      },
+      {
+        title: 'Pixchangeapp',
+        link: 'https://pixchangeapp.com',
+        image: '/img/pixchangeapp_com.png',
+      },
+    ],
   },
 ];
 </script>

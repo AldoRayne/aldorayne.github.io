@@ -1,7 +1,9 @@
 <template>
   <section>
     <h1 class="text-3xl font-medium uppercase">Коновалюк Дмитро Сергійович</h1>
-    <p class="mt-1 text-lg font-medium uppercase">Front-end розробник (офіс / віддалено)</p>
+    <p class="mt-1 text-lg font-medium uppercase">
+      Front-end розробник (офіс / віддалено)
+    </p>
     <div class="mt-2 flex">
       <div class="mr-6 flex items-center">
         <Icon name="ic:outline-place" class="mr-1" />
@@ -24,5 +26,5 @@ const calculateAge = (dateOfBirth: Date): Number => {
   return age;
 };
 
-const age = calculateAge(new Date("1994-03-08"));
+const age = calculateAge(new Date('1994-03-08'));
 </script>

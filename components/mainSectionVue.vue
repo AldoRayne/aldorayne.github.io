@@ -38,7 +38,32 @@
         </div>
       </li>
     </ul>
-    <p v-else class="text-sm">{{ dataText }}</p>
+    <p v-else-if="dataText" class="text-sm">{{ dataText }}</p>
+    <ul v-else class="mb-[-1.25rem] flex flex-wrap">
+      <li
+        v-for="(item, index) in dataPortfolio"
+        :key="index"
+        class="mb-5 px-2 w-full lg:w-3/6"
+      >
+        <a
+          :href="item.link"
+          target="_blank"
+          class="flex justify-center items-center shadow-md rounded overflow-hidden"
+        >
+          <img
+            :src="item.image"
+            alt="item.title"
+            loading="lazy"
+            class="object-cover transition-transform duration-700 hover:scale-150"
+          />
+          <span
+            class="p-1 absolute text-lg font-medium uppercase bg-white rounded shadow pointer-events-none"
+          >
+            {{ item.title }}
+          </span>
+        </a>
+      </li>
+    </ul>
   </section>
 </template>
 
@@ -51,10 +76,14 @@ const props = defineProps({
 });
 
 const dataList = computed((): MainSectionListArray | undefined => {
-  if ("list" in props.data) return props.data.list;
+  if ('list' in props.data) return props.data.list;
 });
 
 const dataText = computed((): string | undefined => {
-  if ("text" in props.data) return props.data.text;
+  if ('text' in props.data) return props.data.text;
+});
+
+const dataPortfolio = computed((): PortfolioListArray | undefined => {
+  if ('portfolioList' in props.data) return props.data.portfolioList;
 });
 </script>
