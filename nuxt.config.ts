@@ -1,15 +1,15 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  app: {
-    baseURL: '/',
-    buildAssetsDir: 'assets'
-  },
+  // app: {
+  //   baseURL: '/',
+  //   buildAssetsDir: 'assets'
+  // },
   devtools: { enabled: true },
   typescript: {
     typeCheck: true,
   },
-  modules: ["@pinia/nuxt", "nuxt-icon"],
-  css: ["~/assets/css/main.css"],
+  modules: ['@pinia/nuxt', 'nuxt-icon'],
+  css: ['~/assets/css/main.css'],
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -17,7 +17,7 @@ export default defineNuxtConfig({
     },
   },
   imports: {
-    dirs: ["types/*.ts"],
+    dirs: ['types/*.ts'],
   },
   runtimeConfig: {
     public: {

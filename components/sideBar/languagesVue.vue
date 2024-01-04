@@ -1,9 +1,9 @@
 <template>
   <section>
     <SideBarTitleVue title="Мови" />
-     <ul class="p-2 text-sm text-white tracking-wide">
+    <ul class="p-2 text-sm text-white tracking-wide">
       <li
-        v-for="(item, index) in languageData"
+        v-for="(item, index) in translates.languages"
         :key="index"
         class="mb-2 flex items-center last:mb-0"
       >
@@ -14,14 +14,7 @@
 </template>
 
 <script setup lang="ts">
-const languageData: Languages = [
-  {
-    language: "Анлійська",
-    level: "розмовна"
-  },
-   {
-    language: "Українська",
-    level: "розмовна"
-  },
-];
+const translatesStore = useTranslatesStore();
+
+const { translates } = storeToRefs(translatesStore);
 </script>

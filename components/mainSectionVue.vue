@@ -43,7 +43,7 @@
       <li
         v-for="(item, index) in dataPortfolio"
         :key="index"
-        class="mb-5 px-2 w-full lg:w-3/6"
+        class="mb-5 px-2 max-w-[519px] w-full md:w-3/6 xl:w-2/6"
       >
         <a
           :href="item.link"
@@ -53,6 +53,8 @@
           <img
             :src="item.image"
             alt="item.title"
+            width="519"
+            height="246"
             loading="lazy"
             class="object-cover transition-transform duration-700 hover:scale-150"
           />

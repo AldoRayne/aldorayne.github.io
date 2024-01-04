@@ -1,0 +1,144 @@
+{
+  "contentData": [
+    {
+      "boldListTitle": true,
+      "title": "Work Experience",
+      "icon": "solar:case-bold",
+      "list": [
+        {
+          "date": "August 2018 - <br /> December 2021",
+          "listTitle": "MyOpencart",
+          "listItems": [
+            "website content administration and filling",
+            "template design from scratch",
+            "installation and configuration of plugins for OpenCart CMS",
+            "integration of back-end logic into HTML pages",
+            "code optimization for better performance",
+            "SEO optimization"
+          ]
+        },
+        {
+          "date": "December 2021 - <br /> January 2023",
+          "listTitle": "Intertech",
+          "listItems": [
+            "template design from scratch",
+            "template design for email",
+            "SPA development using Vue, Nuxt",
+            "working with Rest API",
+            "code optimization for better performance",
+            "SEO optimization"
+          ]
+        },
+        {
+          "date": "January 2023 - <br /> December 2023",
+          "listTitle": "Pixchange",
+          "listItems": [
+            "responsive page design for different devices",
+            "logic development with Vue 2",
+            "working with Rest API",
+            "integration of Metamask Widget for PC and Metamask Browser for mobile devices",
+            "code optimization for better performance",
+            "SEO optimization"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Education",
+      "icon": "mdi:education-outline",
+      "list": [
+        {
+          "date": "2000 - <br /> 2012",
+          "listTitle": "Korsun-Shevchenkivska General Secondary School I-III degree No.1"
+        },
+        {
+          "date": "2012 - <br /> 2016",
+          "listTitle": "Cherkasy National University named after Bohdan Khmelnytsky, System Analysis"
+        }
+      ]
+    },
+    {
+      "title": "Courses",
+      "icon": "streamline:quality-education",
+      "list": [
+        {
+          "date": "2018",
+          "listTitle": "GeekHub: Front-End + JS"
+        }
+      ]
+    },
+    {
+      "title": "About Me",
+      "icon": "mdi:user-outline",
+      "text": "I have been working in the IT field for over five years, with more than four years as a Front-end developer. I have over two years of experience working with Vue and Nuxt. I have worked both remotely from home and in an office with varying frequencies. In the last year, I had the opportunity to work with a foreign client in a multinational team."
+    },
+    {
+      "title": "Portfolio",
+      "icon": "bytesize:portfolio",
+      "portfolioList": [
+        {
+          "title": "Ukrayintsi X.Y.Z.",
+          "link": "https://ukrainci.xyz/",
+          "image": "/img/ukrainci_xyz.png"
+        },
+        {
+          "title": "Optika Lyuxor",
+          "link": "https://opticaluxor.ua/",
+          "image": "/img/opticaluxor_ua.png"
+        },
+        {
+          "title": "Alliance Ua",
+          "link": "https://allianceua.com.ua/",
+          "image": "/img/allianceua_com_ua.png"
+        },
+        {
+          "title": "Tabooret",
+          "link": "https://tabooret.com/ua",
+          "image": "/img/tabooret_com.png"
+        },
+        {
+          "title": "Depositphotos",
+          "link": "https://depositphotos.com/trends2021",
+          "image": "/img/depositphotos_com.png"
+        },
+        {
+          "title": "Pixchangeapp",
+          "link": "https://pixchangeapp.com",
+          "image": "/img/pixchangeapp_com.png"
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "level": "fluent"
+    },
+    {
+      "language": "Ukrainian",
+      "level": "fluent"
+    }
+  ],
+  "skills": [
+    "HTML 5",
+    "CSS 3",
+    "JS",
+    "OOP",
+    "TypeScript",
+    "jQuery",
+    "Webpack",
+    "Npm, Yarn",
+    "Git",
+    "OpenCart 2.3",
+    "Vue 2, 3",
+    "Nuxt 3",
+    "Vuex",
+    "Axios",
+    "Metamask",
+    "Bootstrap",
+    "Figma",
+    "Tailwind CSS",
+    "Vuetify",
+    "Swiper Slider"
+  ]
+}

@@ -1,5 +1,6 @@
 <template>
   <section>
+    <LanguageTogglersVue />
     <h1 class="text-3xl font-medium uppercase">Коновалюк Дмитро Сергійович</h1>
     <p class="mt-1 text-lg font-medium uppercase">
       Front-end розробник (офіс / віддалено)
