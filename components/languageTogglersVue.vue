@@ -25,13 +25,14 @@ function setActiveLang(): void {
   activeLang.value = route.query.lang === 'en' ? 'en' : 'ua';
 }
 
+onMounted(() => {
+  setActiveLang();
+});
+
 watch(
   () => route.query.lang,
   () => {
     setActiveLang();
-  },
-  {
-    immediate: true,
   }
 );
 </script>
