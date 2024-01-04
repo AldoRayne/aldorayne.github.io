@@ -1,4 +1,11 @@
 {
+  "name": "Коновалюк Дмитро Сергійович",
+  "post": "FRONT-END РОЗРОБНИК (ОФІС / ВІДДАЛЕНО)",
+  "country": "Україна, м. Черкаси",
+  "age": "років",
+  "contactsTitle": "Контакти",
+  "languagesTitle": "Мови",
+  "skillsTitle": "Навички",
   "contentData": [
     {
       "boldListTitle": true,

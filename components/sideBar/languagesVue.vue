@@ -1,6 +1,6 @@
 <template>
   <section>
-    <SideBarTitleVue title="Мови" />
+    <SideBarTitleVue :title="translates.languagesTitle" />
     <ul class="p-2 text-sm text-white tracking-wide">
       <li
         v-for="(item, index) in translates.languages"

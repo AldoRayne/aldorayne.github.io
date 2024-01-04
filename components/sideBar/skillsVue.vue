@@ -1,6 +1,6 @@
 <template>
   <section>
-    <SideBarTitleVue title="Навички" />
+    <SideBarTitleVue :title="translates.skillsTitle" />
     <ul class="ml-4 p-2 text-sm text-white tracking-wide list-disc">
       <li
         v-for="(item, index) in translates.skills"

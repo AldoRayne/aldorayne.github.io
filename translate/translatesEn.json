@@ -1,4 +1,11 @@
 {
+  "name": "Dmytro Konovaliuk",
+  "post": "FRONT-END DEVELOPER (OFFICE / REMOTE)",
+  "country": "Ukraine, Cherkasy",
+  "age": "years",
+  "contactsTitle": "Contacts",
+  "languagesTitle": "Languages",
+  "skillsTitle": "Skills",
   "contentData": [
     {
       "boldListTitle": true,
@@ -9,10 +16,10 @@
           "date": "August 2018 - <br /> December 2021",
           "listTitle": "MyOpencart",
           "listItems": [
-            "website content administration and filling",
-            "template design from scratch",
+            "administration and content filling of websites",
+            "template layout from `scratch`",
             "installation and configuration of plugins for OpenCart CMS",
-            "integration of back-end logic into HTML pages",
+            "integration of back-end logic into html pages",
             "code optimization for better performance",
             "SEO optimization"
           ]
@@ -21,8 +28,8 @@
           "date": "December 2021 - <br /> January 2023",
           "listTitle": "Intertech",
           "listItems": [
-            "template design from scratch",
-            "template design for email",
+            "template layout from `scratch`",
+            "template layout for email",
             "SPA development using Vue, Nuxt",
             "working with Rest API",
             "code optimization for better performance",
@@ -33,8 +40,8 @@
           "date": "January 2023 - <br /> December 2023",
           "listTitle": "Pixchange",
           "listItems": [
-            "responsive page design for different devices",
-            "logic development with Vue 2",
+            "responsive page layout for different devices",
+            "logic development in Vue 2",
             "working with Rest API",
             "integration of Metamask Widget for PC and Metamask Browser for mobile devices",
             "code optimization for better performance",
@@ -49,7 +56,7 @@
       "list": [
         {
           "date": "2000 - <br /> 2012",
-          "listTitle": "Korsun-Shevchenkivska General Secondary School I-III degree No.1"
+          "listTitle": "Korsun-Shevchenkivska General Education School I-III grades No. 1"
         },
         {
           "date": "2012 - <br /> 2016",
@@ -70,19 +77,19 @@
     {
       "title": "About Me",
       "icon": "mdi:user-outline",
-      "text": "I have been working in the IT field for over five years, with more than four years as a Front-end developer. I have over two years of experience working with Vue and Nuxt. I have worked both remotely from home and in an office with varying frequencies. In the last year, I had the opportunity to work with a foreign client in a multinational team."
+      "text": "I have been working in the IT sphere for more than five years, with over four years as a Front-end developer. I have over two years of experience working with Vue and Nuxt. I have worked both remotely from home and in the office with varying frequencies. In the past year, I had the opportunity to work with a foreign client in a multinational team."
     },
     {
       "title": "Portfolio",
       "icon": "bytesize:portfolio",
       "portfolioList": [
         {
-          "title": "Ukrayintsi X.Y.Z.",
+          "title": "Ukrainians X.Y.Z.",
           "link": "https://ukrainci.xyz/",
           "image": "/img/ukrainci_xyz.png"
         },
         {
-          "title": "Optika Lyuxor",
+          "title": "Optika Luxor",
           "link": "https://opticaluxor.ua/",
           "image": "/img/opticaluxor_ua.png"
         },
@@ -112,11 +119,11 @@
   "languages": [
     {
       "language": "English",
-      "level": "fluent"
+      "level": "conversational"
     },
     {
       "language": "Ukrainian",
-      "level": "fluent"
+      "level": "conversational"
     }
   ],
   "skills": [

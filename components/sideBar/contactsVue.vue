@@ -1,6 +1,6 @@
 <template>
   <section>
-    <SideBarTitleVue title="Контакти" />
+    <SideBarTitleVue :title="translates.contactsTitle" />
     <ul class="p-2 text-sm text-white tracking-wide">
       <li
         v-for="(item, index) in contactsData"
@@ -17,21 +17,25 @@
 </template>
 
 <script setup lang="ts">
+const translatesStore = useTranslatesStore();
+
+const { translates } = storeToRefs(translatesStore);
+
 const contactsData: Contacts = [
   {
-    icon: "mdi:phone",
-    link: "tel:+380679173573",
-    text: "+380679173573",
+    icon: 'mdi:phone',
+    link: 'tel:+380679173573',
+    text: '+380679173573',
   },
   {
-    icon: "material-symbols:mail-outline",
-    link: "mailto:aldoray.n7@gmail.com",
-    text: "aldoray.n7@gmail.com",
+    icon: 'material-symbols:mail-outline',
+    link: 'mailto:aldoray.n7@gmail.com',
+    text: 'aldoray.n7@gmail.com',
   },
   {
-    icon: "mingcute:telegram-line",
-    link: "https://t.me/dkonovaliuk",
-    text: "Telegram",
+    icon: 'mingcute:telegram-line',
+    link: 'https://t.me/dkonovaliuk',
+    text: 'Telegram',
     newTab: true,
   },
 ];
