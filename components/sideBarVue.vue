@@ -2,7 +2,7 @@
   <aside
     ref="sideBar"
     :class="isOpened ? 'overflow-y-auto' : 'overflow-y-hidden'"
-    class="fixed z-20 pb-6 top-0 left-[-270px] sm:left-0 shrink-0 w-[320px] h-full bg-gradient-to-b from-[#092974] to-[#1c23c3]"
+    class="fixed z-20 pb-6 top-0 left-[-270px] sm:left-0 shrink-0 w-[320px] h-full bg-gradient-to-b from-[#092974] to-[#1c23c3] transition-all"
     @mouseover="enableScroll"
     @mouseleave="disableScroll"
   >
