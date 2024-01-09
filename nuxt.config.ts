@@ -1,14 +1,14 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  app: {
-    baseURL: '/',
-    buildAssetsDir: 'assets'
-  },
+  // app: {
+  //   baseURL: '/',
+  //   buildAssetsDir: 'assets'
+  // },
   devtools: { enabled: true },
   typescript: {
     typeCheck: true,
   },
-  modules: ['@pinia/nuxt', 'nuxt-icon'],
+  modules: ['@pinia/nuxt', '@pinia-plugin-persistedstate/nuxt', 'nuxt-icon'],
   css: ['~/assets/css/main.css'],
   postcss: {
     plugins: {

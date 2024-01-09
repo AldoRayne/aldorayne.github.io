@@ -10,11 +10,16 @@ export const useTranslatesStore = defineStore('translates', {
     };
   },
 
+  getters: {
+    translatesExist: (state): boolean =>
+      Object.keys(state.translates).length !== 0,
+  },
+
   actions: {
     setTranslates(payload: string | LocationQueryValue[]) {
       if (payload === 'en') {
         this.translates = skillsJsonEn;
-        
+
         return;
       }
 
