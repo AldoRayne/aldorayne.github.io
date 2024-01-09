@@ -6,7 +6,7 @@ import skillsJsonUa from '~/translate/translatesUa.json';
 export const useTranslatesStore = defineStore('translates', {
   state: () => {
     return {
-      translates: {} as any,
+      translates: {} as Translates,
     };
   },
 

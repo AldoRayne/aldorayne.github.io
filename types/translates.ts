@@ -1,4 +1,15 @@
-export type MainData = MainSection[];
+export interface Translates {
+  readonly name: string;
+  readonly post: string;
+  readonly country: string;
+  readonly age: string;
+  readonly contactsTitle: string;
+  readonly languagesTitle: string;
+  readonly skillsTitle: string;
+  readonly contentData: MainSection[];
+  readonly skills: string[];
+  readonly languages: Language[];
+}
 
 export type MainSection = {
   readonly title: string;
@@ -35,4 +46,9 @@ interface PortfolioLink {
   readonly title: string;
   readonly link: string;
   readonly image: string;
+}
+
+interface Language {
+  language: string;
+  level: string;
 }

@@ -81,11 +81,11 @@ const dataList = computed((): MainSectionListArray | undefined => {
   if ('list' in props.data) return props.data.list;
 });
 
-const dataText = computed((): string | undefined => {
-  if ('text' in props.data) return props.data.text;
-});
-
 const dataPortfolio = computed((): PortfolioListArray | undefined => {
   if ('portfolioList' in props.data) return props.data.portfolioList;
+});
+
+const dataText = computed((): string | undefined => {
+  if ('text' in props.data) return props.data.text;
 });
 </script>
